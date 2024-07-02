@@ -24,7 +24,7 @@ const StudentDashboard = () => {
   return (
     <div className="student-dashboard">
       <h1>Student Dashboard</h1>
-      <div className="dashboard-options">
+      <div className="dashboard-option">
         <button onClick={handlePersonalDetails} className="dashboard-option">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3WdPBU4F0jjWIefAnJGvIYgqefCKYq_fpQ&usqp=CAU"
@@ -33,20 +33,20 @@ const StudentDashboard = () => {
           Personal Details
         </button>
 
-        <button onClick={handleSubjectsTeachers} className="dashboard-option">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAclBMVEX///8AAACHh4cKCgp7e3vf39/39/dPT08TExObm5s/Pz8jIyN3d3fLy8txcXFfX1+1tbUvLy9XV1fX19eTk5Ojo6O/v7/5+flCQkLq6urx8fHR0dEPDw86OjpmZmYqKiqNjY0ZGRlISEiwsLCCgoLExMQQquVFAAADtElEQVR4nO3d63KqMBiF4VDEQ6UoFVFB8VB7/7dYE8FWGw1gvpgw6/m1mdlDeGtBDpoyBgAAAAAAAAAAAAAAAI0s0tEblS9zGbPJ2iMUmuroUVac+GYy+gfiDs8zEzIg7zATkoih1r2PrE9hYipk5fORliuq9RsLOfKB4v55IXvrBZrXbywk5gPlvwtDza+NqZBMvCDlQs4X5noHMBUitj0qFz74wkjvAKZCxLb3/i44GpIjpCaENISQugyELFYnqesheRj/npy6GxJ8Xp1lOxuSDr1OhKS+14mQ4HyjYTjZjUajpcMh50vbMBMLkbshgeioTtYdDhGXhEW15HDIhq/5ckHrcAg/ZMWXJXdDFnzFg8uiuyGsaUgQFg2k1oZke6+Rqa0h02Ydv8dD20JmDUN2toawZHh/q//77Fsb8iSEKDUNmb9vGois/dVKG+7s1h61mj5f3Noa0pn3ETbaxA0UmbUhT0KIUuNfrb0vN749P5SyJiS4v1/7t/uDjDUhj45asxrDWROS3T9n3C5qDGdNCJsVn3JRrQfZ9oQ8CSFKCGkHIUoIaQchSghpByFKCGkHIUoIaQchSghpByFKCGkHIUoIaQchSghpx9mQNLm2cTRE/jT7qVXeQxty+9loZ0P2XQn5kr4kT63yHuKdPcuvDVwNueXs4bcUpKWD2yFH9/cRIevAzi50JuS82i6EsO956d3xkAvXD78XCFF6EJLx78PV+exSAy8JYd/Lje4Zi14TQgAhSvKQ+WE8JOEbDQnlV6jamAoh15WQpdmQO59TftI63hQ0U0XJQ/zj7TdYrCcN2db5ULVlZCHDOh9Fto0shJ+XZAEJuh+RJIRPP5gQHbH2+f1N0R6yZWxF1EF17P0X8laO9eDbFU+KH2yLxpBdNRbZrJOaL9QehvCZExZzmhlZv6k6pCETstEIyULoXn9C0hAvcu+tvQpJQ/61nMvkVH58GGhR7K4Q7yMB/dS4Fc0TWF6H7I1leN6GMsSkQ0dCaM+1xAjR11TIZ8LHVI9ydRXas9+ThGwAU84dtb4wbDfRMVD/P+uJkBVj/fCdxNHUZTPvWDPCO1qUd5L/EPNrjU//2FKFkL0D3vDLsSZUIZFyE/Tgr4TfZyybjEkUpu70Ffyn5uL1xy0x98FQ9zz3ryD28q3mZ56vcJ7WyA9zF++TXgmr4wvFYwQvJjvd/a+gOvIKZHfkJBLKZ4aG/pDNWRDR/XUhwzfJFmnSCwlEO+ePIQAAAAAAAAAAAAAAACb9APDra8lW9IlBAAAAAElFTkSuQmCC"
-            alt="Subjects and Teachers Icon"
-          />
-          Subjects & Teachers
-        </button>
-
         <button onClick={handleAttendance} className="dashboard-option">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZgXZ6RbHnxvzTMHEq1oDmlcUtBDLYYUnOQ&usqp=CAU"
             alt="Attendance Icon"
           />
           Attendance
+        </button>
+
+        <button onClick={handleSubjectsTeachers} className="dashboard-option">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAclBMVEX///8AAACHh4cKCgp7e3vf39/39/dPT08TExObm5s/Pz8jIyN3d3fLy8txcXFfX1+1tbUvLy9XV1fX19eTk5Ojo6O/v7/5+flCQkLq6urx8fHR0dEPDw86OjpmZmYqKiqNjY0ZGRlISEiwsLCCgoLExMQQquVFAAADtElEQVR4nO3d63KqMBiF4VDEQ6UoFVFB8VB7/7dYE8FWGw1gvpgw6/m1mdlDeGtBDpoyBgAAAAAAAAAAAAAAAI0s0tEblS9zGbPJ2iMUmuroUVac+GYy+gfiDs8zEzIg7zATkoih1r2PrE9hYipk5fORliuq9RsLOfKB4v55IXvrBZrXbywk5gPlvwtDza+NqZBMvCDlQs4X5noHMBUitj0qFz74wkjvAKZCxLb3/i44GpIjpCaENISQugyELFYnqesheRj/npy6GxJ8Xp1lOxuSDr1OhKS+14mQ4HyjYTjZjUajpcMh50vbMBMLkbshgeioTtYdDhGXhEW15HDIhq/5ckHrcAg/ZMWXJXdDFnzFg8uiuyGsaUgQFg2k1oZke6+Rqa0h02Ydv8dD20JmDUN2toawZHh/q//77Fsb8iSEKDUNmb9vGois/dVKG+7s1h61mj5f3Noa0pn3ETbaxA0UmbUhT0KIUuNfrb0vN749P5SyJiS4v1/7t/uDjDUhj45asxrDWROS3T9n3C5qDGdNCJsVn3JRrQfZ9oQ8CSFKCGkHIUoIaQchSghpByFKCGkHIUoIaQchSghpByFKCGkHIUoIaQchSghpx9mQNLm2cTRE/jT7qVXeQxty+9loZ0P2XQn5kr4kT63yHuKdPcuvDVwNueXs4bcUpKWD2yFH9/cRIevAzi50JuS82i6EsO956d3xkAvXD78XCFF6EJLx78PV+exSAy8JYd/Lje4Zi14TQgAhSvKQ+WE8JOEbDQnlV6jamAoh15WQpdmQO59TftI63hQ0U0XJQ/zj7TdYrCcN2db5ULVlZCHDOh9Fto0shJ+XZAEJuh+RJIRPP5gQHbH2+f1N0R6yZWxF1EF17P0X8laO9eDbFU+KH2yLxpBdNRbZrJOaL9QehvCZExZzmhlZv6k6pCETstEIyULoXn9C0hAvcu+tvQpJQ/61nMvkVH58GGhR7K4Q7yMB/dS4Fc0TWF6H7I1leN6GMsSkQ0dCaM+1xAjR11TIZ8LHVI9ydRXas9+ThGwAU84dtb4wbDfRMVD/P+uJkBVj/fCdxNHUZTPvWDPCO1qUd5L/EPNrjU//2FKFkL0D3vDLsSZUIZFyE/Tgr4TfZyybjEkUpu70Ffyn5uL1xy0x98FQ9zz3ryD28q3mZ56vcJ7WyA9zF++TXgmr4wvFYwQvJjvd/a+gOvIKZHfkJBLKZ4aG/pDNWRDR/XUhwzfJFmnSCwlEO+ePIQAAAAAAAAAAAAAAACb9APDra8lW9IlBAAAAAElFTkSuQmCC"
+            alt="Subjects and Teachers Icon"
+          />
+          Subjects & Teachers
         </button>
 
         <button onClick={handleMarks} className="dashboard-option">
