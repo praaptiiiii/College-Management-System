@@ -82,3 +82,115 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
+/* dashboard css */
+.student-dashboard,
+.teacher-dashboard,
+.admin-dashboard {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-option {
+  margin: 10px;
+  flex: 1 1 calc(25% - 20px); /* Adjust width for responsiveness */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-option button,
+.adminButton {
+  background-color: #4a81d6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-option button:hover,
+.adminButton:hover {
+  background-color: #cd4846;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.dashboard-option img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.dashboard-option p {
+  margin: 0;
+}
+
+/* Admin */
+.adminButton {
+  display: inline-block; /* Ensures the button respects the container's centering */
+}
+
+/* student */
+
+.dashboard-content,
+table {
+  margin-top: 20px;
+}
+
+.dashboard-content > div,
+p,
+h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* teacher */
+.component-container {
+  margin-top: 20px;
+}
+
+.class-list,
+.student-row,
+.class-row {
+  margin-bottom: 10px;
+}
+
+.student-row > span,
+.class-row > span {
+  margin-right: 10px;
+}
+
+.student-row > button,
+.class-row > button {
+  margin-left: 5px;
+}
