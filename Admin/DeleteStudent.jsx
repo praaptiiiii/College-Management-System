@@ -33,7 +33,9 @@ const DeleteStudent = ({ onDelete }) => {
             required
           />
         </div>
-        <button type="submit">Delete</button>
+        <button type="submit" className="adminButton">
+          Delete
+        </button>
       </form>
     </div>
   );
