@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import LoginOptions from "./LoginOptions";
-import AdminLogin from "./AdminLogin";
-import TeacherLogin from "./TeacherLogin";
-import StudentLogin from "./StudentLogin";
+import AdminLogin from "./Logins/AdminLogin";
+import TeacherLogin from "./Logins/TeacherLogin";
+import StudentLogin from "./Logins/StudentLogin";
 
 function App() {
   const [showLoginOptions, setShowLoginOptions] = useState(false);
