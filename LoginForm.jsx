@@ -1,14 +1,25 @@
 import React, { useState } from "react";
+import StudentDashboard from "./Dashboard/StudentDashboard";
+import TeacherDashboard from "./Dashboard/TeacherDashboard";
+import AdminDashboard from "./Dashboard/AdminDashboard";
 
 function LoginForm({ title, onSubmit }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
-    onSubmit(username, password); // Call parent function with form data
+    // Perform login logic here, e.g., authentication check
+    if (username && password) {
+      setIsLoggedIn(true);
+    }
   };
-
+  if (isLoggedIn) {
+    //return <StudentDashboard />;
+    //return <TeacherDashboard />;
+    return <AdminDashboard />;
+  }
   return (
     <form className="login-form form-group" onSubmit={handleSubmit}>
       <h2>{title} Login</h2>
