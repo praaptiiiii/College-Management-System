@@ -71,7 +71,9 @@ const AddTeacher = ({ onSubmit }) => {
             required
           />
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" className="adminButton">
+          Add
+        </button>
       </form>
     </div>
   );
